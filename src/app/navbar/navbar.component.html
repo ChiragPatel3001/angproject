@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="mat-elevation-z5">
+    <span>Chirag Patel</span>
+    <a mat-button href="#htmlcmp">HTML</a>
+    <a mat-button href="#csscmp">CSS</a>
+    <a mat-button href="#jscmp">JavaScript</a>
+    <button mat-raised-button [matMenuTriggerFor]="menu" color="accent" >Tasks</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="taskbasic">Task 1</button>
+      <button mat-menu-item routerLink="tasktables">Task 2</button>
+      <button mat-menu-item routerLink="taskforms">Task 3</button>
+      <button mat-menu-item routerLink="taskvideos">Task 4</button>
+    </mat-menu>
+</mat-toolbar>

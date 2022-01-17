@@ -1,0 +1,36 @@
+#htmlcmp  {
+    background-color: #673ab7;
+    padding: 0.5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    width: 70%;
+}
+#csscmp  {
+    background-color: #673ab7;
+    padding: 0.5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-left: 500px;
+    width: 70%;
+}
+#jscmp  {
+    background-color: #673ab7;
+    padding: 0.5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    width: 70%;
+}
+footer {
+    background-color: white;
+    padding: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}

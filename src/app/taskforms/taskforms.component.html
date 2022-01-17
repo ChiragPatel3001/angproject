@@ -1,0 +1,106 @@
+<h1 id="forms" style="margin-top: 20px;">DAY 3: Forms</h1>
+<fieldset style="background-color: transparent ; border-radius: 10px;width: 90%;height: auto;">
+  <legend style="text-align: left; color: #000;">
+    <h2>Personal Details :</h2>
+  </legend>
+  <form action="/backend.php" target="_blank" method="post">
+    <!-- 'div' has been used here,since it's a block level element and it will allow our content to start in new line -->
+    <div>
+      <label for="fname">First Name :</label>
+      <input type="text" id="fname" name="fname" placeholder="Enter your First Name">
+    </div>
+    <!-- We'll avoid using br tags , instead css: margin and padding properties are preferred -->
+    <br>
+    <div>
+      <label for="mname">Middle Name :</label>
+      <input type="text" id="mname" name="mname" placeholder="Enter your Middle Name">
+    </div>
+    <br>
+    <div>
+      <label for="lname">Last Name :</label>
+      <input type="text" id="lname" name="lname" placeholder="Enter your Last Name">
+    </div>
+    <br>
+    <div>
+      <label for="age">Age :</label>
+      <input type="text" id="age" name="age" placeholder="Enter your Age">
+    </div>
+    <br>
+    <div>
+      <label for="dob">Date of Birth :</label>
+      <input type="date" id="dob" name="dob">
+    </div>
+    <br>
+    <div>
+      <label for="contact" style="size: 10;">Contact No. :</label>
+      <input type="text" id="contact" name="contact" maxlength="10" placeholder="Contact number">
+    </div>
+    <br>
+    <div>
+      <label for="gender">Gender :</label>
+      Male<input type="radio" id="gender" name="gender">
+      Female<input type="radio" id="gender" name="gender">
+      Other<input type="radio" id="gender" name="gender">
+    </div>
+    <br>
+    <div>
+      <label for="address" >Address :</label>
+      <textarea name="address" rows="6" cols="30" id="address" name="address"
+        placeholder="Flat/House No., Building Name, Street Name, city name, pincode" style="resize: none;"></textarea>
+    </div>
+    <br>
+    <div>
+      <label for="mailid">Email id :</label>
+      <input type="email" id="mailid" name="mailid" placeholder="Enter your email">
+    </div>
+    <br>
+    <div>
+      <label for="pass">Password :</label>
+      <input type="password" id="pass" name="pass" placeholder="Enter your password">
+    </div>
+    <br>
+    <br>
+    <div>
+      <label for="department">Country :</label>
+      <select id="department" name="department" size="1">
+        <option value="frontend" selected>India</option>
+        <option value="backend">United Kingdom</option>
+        <option value="UIdev">Canada</option>
+        <option value="qa">Germany</option>
+      </select>
+    </div>
+    <br>
+    <fieldset style="border-radius: 10px;">
+      <legend>Your Area of Expertise?</legend>
+      <label for="uidev"> UI Developer :</label>
+      <input type="checkbox" id="uidev" name="uidev"><br>
+      <label for="frontend"> Frontend Developer :</label>
+      <input type="checkbox" id="frontend" name="frontend"><br>
+      <label for="Backend"> Backend Developer :</label>
+      <input type="checkbox" id="Backend" name="Backend"><br>
+      <label for="fullstck"> Full Stack Developer :</label>
+      <input type="checkbox" id="fullstck" name="fullstck"><br>
+      <label for="andDev"> Android Developer :</label>
+      <input type="checkbox" id="andDev" name="andDev"><br>
+    </fieldset>
+    <br>
+    <div>
+      <label for="exp">Experience :</label>
+      <input type="number" id="exp" name="exp" min="0" placeholder="In years">
+    </div>
+    <br>
+    <div>
+      <label for="aadhar">Upload Aadhar:</label>
+      <input type="file" id="aadhar" name="aadhar" multiple><br><br>
+    </div>
+    <div>
+      <label for="pan">Upload PAN:</label>
+      <input type="file" id="pan" name="pan" multiple><br><br>
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+    <br>
+  </form>
+</fieldset>
